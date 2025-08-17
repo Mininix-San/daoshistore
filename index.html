@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daoshi Store - BORA CASHAR???</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One:wght@400&family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Background Stars Animation -->
+    <div class="stars-container">
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+    </div>
+
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1 class="logo-text">Daoshi Store</h1>
+            </div>
+            <div class="header-right">
+                <!-- USDT Price Widget -->
+                <div class="usdt-widget">
+                    <div class="usdt-icon" id="usdt-icon">💰</div>
+                    <div class="usdt-info">
+                        <div class="usdt-label">USDT/BRL</div>
+                        <div class="usdt-price" id="usdt-price">Carregando...</div>
+                    </div>
+                    <div class="usdt-status" id="usdt-status">✨</div>
+                </div>
+                
+                <nav class="nav">
+                    <a href="#games" class="nav-link">Jogos</a>
+                    <a href="https://discord.gg/Zve6f8VQ" target="_blank" class="nav-link discord-main">Discord</a>
+                    <a href="https://discord.com/channels/1184339622696853626/1388247966242050048" target="_blank" class="nav-link shop-link">Loja</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <!-- Decorative Elements -->
+        <div class="hero-decoration-corner top-left">✨</div>
+        <div class="hero-decoration-corner top-right">💖</div>
+        <div class="hero-decoration-corner bottom-left">⭐</div>
+        <div class="hero-decoration-corner bottom-right">💎</div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="magic-text">BORA CASHAR???</span>
+                    <div class="hearts">💖 ✨ 🌟 ✨ 💖</div>
+                </h1>
+                <p class="hero-subtitle">Sua loja de jogos virtuais!</p>
+                <div class="cta-buttons">
+                    <a href="#games" class="btn btn-primary">Ver Jogos</a>
+                    <a href="https://discord.gg/Zve6f8VQ" target="_blank" class="btn btn-secondary">Entrar no Discord</a>
+                </div>
+            </div>
+            
+            <!-- Botão de Dúvidas Flutuante -->
+            <div class="help-button" onclick="toggleHelpModal()">
+                <div class="help-avatar">
+                    <img src="daoshiduvida.png" alt="Daoshi Ajuda" loading="lazy">
+                </div>
+                <div class="help-text">
+                    <span>Dúvidas?</span>
+                    <small>Clique aqui!</small>
+                </div>
+            </div>
+            
+            <!-- Modal de Ajuda -->
+            <div id="helpModal" class="help-modal">
+                <div class="help-modal-content">
+                    <button class="close-help" onclick="toggleHelpModal()">✕</button>
+                    <div class="help-header">
+                        <img src="daoshiduvida.png" alt="Daoshi" class="help-modal-avatar">
+                        <h3>Como posso te ajudar?</h3>
+                    </div>
+                    <div class="help-options">
+                        <a href="https://discord.gg/Zve6f8VQ" target="_blank" class="help-option">
+                            <span class="help-icon">💬</span>
+                            <div>
+                                <strong>Discord Geral</strong>
+                                <small>Entre no servidor para conversar</small>
+                            </div>
+                        </a>
+                        <a href="https://discord.com/channels/1184339622696853626/1388247966242050048" target="_blank" class="help-option">
+                            <span class="help-icon">🛒</span>
+                            <div>
+                                <strong>Canal da Loja</strong>
+                                <small>Faça seu pedido aqui</small>
+                            </div>
+                        </a>
+                        <div class="help-option" onclick="showPriceInfo()">
+                            <span class="help-icon">💰</span>
+                            <div>
+                                <strong>Como funcionam os preços?</strong>
+                                <small>Entenda nossa cotação</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Daoshi Welcome Message -->
+            <div class="daoshi-welcome">
+                <div class="daoshi-avatar">
+                    <img src="daoshiacenando.png" alt="Daoshi" loading="lazy">
+                </div>
+                <div class="welcome-message">
+                    <h3>Olá, aventureiros!</h3>
+                    <p>Seja bem-vindo à <strong>Daoshi Store</strong>! Aqui você encontra os melhores preços para seus jogos favoritos, sempre atualizados em tempo real!</p>
+                </div>
+            </div>
+            <div class="hero-decoration">
+                <div class="floating-element heart">💖</div>
+                <div class="floating-element star">⭐</div>
+                <div class="floating-element diamond">💎</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Games Section -->
+    <section id="games" class="games-section">
+        <!-- Decorative Border -->
+        <div class="section-decoration-border"></div>
+        <div class="container">
+
+            <h2 class="section-title">
+                <span class="title-text">Nossos Jogos</span>
+                <div class="title-decoration">⭐ 💖 ⭐</div>
+            </h2>
+            
+            <div class="games-grid">
+                <!-- MIR4 Card -->
+                <div class="game-card" data-game="mir4">
+                    <img src="mir4card.png" alt="MIR4" loading="lazy">
+                    <div class="card-overlay">
+                        <div class="overlay-content">
+                            <h3>MIR4</h3>
+                            <p>Gold e Topups</p>
+                            <div class="card-buttons">
+                                <a href="https://discord.com/channels/1184339622696853626/1388247966242050048" target="_blank" class="card-btn">Comprar</a>
+                                <button class="card-btn card-btn-info" onclick="openGameModal('mir4')">Info</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Night Crows Card -->
+                <div class="game-card" data-game="nightcrows">
+                    <img src="nightcrowscard.png" alt="Night Crows" loading="lazy">
+                    <div class="card-overlay">
+                        <div class="overlay-content">
+                            <h3>Night Crows</h3>
+                            <p>Diamantes e Topups</p>
+                            <div class="card-buttons">
+                                <a href="https://discord.com/channels/1184339622696853626/1388247966242050048" target="_blank" class="card-btn">Comprar</a>
+                                <button class="card-btn card-btn-info" onclick="openGameModal('nightcrows')">Info</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ROM Card -->
+                <div class="game-card" data-game="rom">
+                    <img src="romcard.png" alt="ROM" loading="lazy">
+                    <div class="card-overlay">
+                        <div class="overlay-content">
+                            <h3>ROM</h3>
+                            <p>Topups</p>
+                            <div class="card-buttons">
+                                <a href="https://discord.com/channels/1184339622696853626/1388247966242050048" target="_blank" class="card-btn">Comprar</a>
+                                <button class="card-btn card-btn-info" onclick="openGameModal('rom')">Info</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Discord Section -->
+    <section class="discord-section">
+        <!-- Decorative Elements -->
+        <div class="discord-decoration left">🎮</div>
+        <div class="discord-decoration right">💬</div>
+        <div class="container">
+
+            <div class="discord-content">
+                <h2 class="discord-title">Junte-se à nossa comunidade!</h2>
+                <p class="discord-subtitle">Todos os negócios são feitos no nosso Discord! Venha fazer parte da nossa comunidade!</p>
+                <div class="discord-buttons">
+                    <a href="https://discord.gg/Zve6f8VQ" target="_blank" class="btn btn-discord">
+                        <span>Entrar no Servidor</span>
+                    </a>
+                    <a href="https://discord.com/channels/1184339622696853626/1388247966242050048" target="_blank" class="btn btn-shop">
+                        <span>Canal da Loja</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Payment Methods Section -->
+    <section class="payment-section">
+        <div class="container">
+
+            <h3 class="payment-title">Formas de Pagamento Aceitas</h3>
+            <div class="payment-methods">
+                <div class="payment-method">
+                    <div class="payment-icon">
+                        <img src="pix.png" alt="PIX" class="payment-img">
+                    </div>
+                    <span class="payment-label">PIX</span>
+                </div>
+                <div class="payment-method">
+                    <div class="payment-icon">
+                        <img src="binance.png" alt="Binance" class="payment-img">
+                    </div>
+                    <span class="payment-label">Binance</span>
+                </div>
+                <div class="payment-method">
+                    <div class="payment-icon">
+                        <img src="bybit.png" alt="Bybit" class="payment-img">
+                    </div>
+                    <span class="payment-label">Bybit</span>
+                </div>
+                <div class="payment-method">
+                    <div class="payment-icon">
+                        <img src="bep20.png" alt="USDC BEP20" class="payment-img">
+                    </div>
+                    <span class="payment-label">USDC BEP20</span>
+                </div>
+                <div class="payment-method">
+                    <div class="payment-icon">
+                        <img src="trc20.png" alt="USDT TRC20" class="payment-img">
+                    </div>
+                    <span class="payment-label">USDT TRC20</span>
+                </div>
+            </div>
+            <p class="payment-note">Pagamentos seguros e verificados para sua tranquilidade 🔒</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Daoshi Store</h3>
+                    <p>Sua loja de jogos virtuais!</p>
+                    <div class="social-links">
+                        <a href="https://discord.gg/Zve6f8VQ" target="_blank">Discord</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Nossos Jogos</h4>
+                    <ul>
+                        <li>MIR4</li>
+                        <li>Night Crows</li>
+                        <li>ROM: Remember of Majesty</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Links Úteis</h4>
+                    <ul>
+                        <li><a href="https://discord.gg/Zve6f8VQ" target="_blank">Servidor Discord</a></li>
+                        <li><a href="https://discord.com/channels/1184339622696853626/1388247966242050048" target="_blank">Canal da Loja</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Daoshi Store - BORA CASHAR???</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Game Info Modal -->
+    <div id="gameModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
